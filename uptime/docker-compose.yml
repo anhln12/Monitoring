@@ -1,0 +1,14 @@
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    container_name: uptime-kuma
+    restart: always
+    ports:
+      - "80:3001"
+    # --- ĐÂY LÀ PHẦN BẠN CẦN ---
+    extra_hosts:
+      - "xxyz.com:10.2.30.5"
+      - "api.internal:10.2.30.6" # Bạn có thể thêm nhiều dòng nếu muốn
+    # ---------------------------
+    volumes:
+      - ./uptime-kuma-data:/app/data
