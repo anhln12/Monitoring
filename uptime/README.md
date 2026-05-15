@@ -1,0 +1,1 @@
+Uptime Kuma is an open-source tool to monitor the uptime of hosts or servers. This tool can be used to check if a website or service is up. If the monitored target is not reachable for a specified time interval, then notifications can be sent via Slack, Telegram, Discord, or other notification service. Uptime Kuma provides a dashboard that can be accessed via a web browser.
